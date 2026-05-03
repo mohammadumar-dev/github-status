@@ -1,0 +1,16 @@
+{
+  "headers": [
+    {
+      "source": "/api/card",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        { "key": "Access-Control-Allow-Methods", "value": "GET, OPTIONS" },
+        { "key": "X-Robots-Tag", "value": "noindex" }
+      ]
+    }
+  ],
+  "functions": {
+    "app/api/card/route.ts": { "maxDuration": 30 },
+    "app/api/stats/route.ts": { "maxDuration": 30 }
+  }
+}
